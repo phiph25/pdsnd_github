@@ -81,10 +81,10 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    print(df['day_of_week'])
-    #print(df)
+    #print(df['day_of_week'])
+    
     # TO DO: display the most common month
-    # print("The most common month is: ", df['month'].value_counts().idxmax())
+    print("The most common month is: ", df['month'].value_counts().idxmax())
     popular_month = df['month'].mode()[0]
     print('Most Common Month:', popular_month)
 
